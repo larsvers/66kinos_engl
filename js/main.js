@@ -624,7 +624,7 @@ function circleDown(d) {
     d3.select('#cinema-info-adress').html(d.kino_strasse_nr + '<br>' + d.kino_plz + ' ' + d.kino_stadt + '<br>' + '<a href="tel:' + d.kino_tel + '">' + d.kino_tel + '</a>');
 
     d3.select('#cinema-info-link a').attr('href', d.kino_url).html('link');
-    d3.select('#cinema-map-link a').attr('href', d.kino_map).html('karte');
+    d3.select('#cinema-map-link a').attr('href', d.kino_map).html('map');
 
   }); // player.ready()
 
@@ -680,7 +680,7 @@ function textDown(d) {
       
 
     if (d.kino_url !== 'NA') { d3.select('#cinema-info-link a').attr('href', d.kino_url).html('link'); }
-    if (d.kino_map !== 'NA') { d3.select('#cinema-map-link a').attr('href', d.kino_map).html('karte'); }
+    if (d.kino_map !== 'NA') { d3.select('#cinema-map-link a').attr('href', d.kino_map).html('map'); }
 
   }); // player.ready()
 
@@ -740,17 +740,17 @@ function story() {
   setText(text, position, dur);
 
   timers[0] = d3.timeout(function() { 
-    text = ['Von Oktober 2014 bis Februar 2016'];
+    text = ['From October 2014 to February 2016'];
     setText(text, position, dur, true);
   }, dur * 2);
 
   timers[1] = d3.timeout(function() { 
-    text = ['habe ich über 66 Kinos besucht'];
+    text = ['I\'ve visited over 66 cinemas'];
     setText(text, position, dur, true); 
   }, dur * 5);
 
   timers[2] = d3.timeout(function() { 
-    text = ['und das Leben der Kinos und Ihrer Macher gefilmt.'];
+    text = ['and filmed the story of the cinemas and their makers.'];
     setText(text, position, dur, true);
   }, dur * 8);
 
@@ -760,18 +760,18 @@ function story() {
   }, dur * 11);
 
   timers[4] = d3.timeout(function() { 
-    text = ['Die Reise habe ich im Film 66KINOS dokumentiert,'];
+    text = ['I documented the journey in my film 66KINOS,'];
     setText(text, position, dur, true);
   }, dur * 12);
 
   timers[5] = d3.timeout(function() { 
-    text = ['der viele Geschichten erzählt...'];
+    text = ['which tells many stories...'];
     setText(text, position, dur, true);
   }, dur * 15);
 
 
   timers[6] = d3.timeout(function() { 
-    text = ['...eine für jedes Kino:'];
+    text = ['... one for each cinema:'];
     setText(text, position, dur, true);
   }, dur * 18);
 
@@ -790,34 +790,34 @@ function story() {
   // Sortings and map
 
   timers[9] = d3.timeout(function() { 
-    text = ['Jedes Dreieck repräsentiert ein Kino.'];
+    text = ['Each triangle represents a cinema.'];
     position = { x: vis.dims.width/2, y: -15, anchor: 'middle' };
     setText(text, position, dur);
   }, dur * 26.5);
 
   timers[10] = d3.timeout(function() { 
-    text = ['Du kannst sie sortieren nach Kinonamen...'];
+    text = ['You can sort them by cinema name...'];
     setText(text, position, dur);
   }, dur * 28.5);
 
   timers[11] = d3.timeout(positionAlphabeticalCinema, dur * 29.5);
 
   timers[12] = d3.timeout(function() { 
-    text = ['...nach Stadt...'];
+    text = ['... by city...'];
     setText(text, position, dur);
   }, dur * 31);
 
   timers[13] = d3.timeout(positionAlphabeticalCity, dur * 32);
 
   timers[14] = d3.timeout(function() { 
-    text = ['...nach der Reihenfolge meiner Besuche...'];
+    text = ['... by the order of my visits...'];
     setText(text, position, dur);
   }, dur * 33);
 
   timers[15] = d3.timeout(positionVisitingOrder, dur * 34);
 
   timers[16] = d3.timeout(function() { 
-    text = ['...oder finde sie auf einer Karte.'];
+    text = ['... or you can find it on a map.'];
     setText(text, position, dur);
   }, dur * 36);
 
@@ -825,7 +825,7 @@ function story() {
 
   timers[18] = d3.timeout(function() { 
     position = { x: vis.dims.width/2, y: vis.dims.height, anchor: 'middle' };
-    text = ['Klick auf ein Kino und schau Dir seine Geschichte an'];
+    text = ['Click on a cinema and watch its story'];
     setText(text, position, dur);
 
     // Allow button interaction and remove skip button
