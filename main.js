@@ -750,7 +750,7 @@ function story() {
   }, dur * 5);
 
   timers[2] = d3.timeout(function() { 
-    text = ['and filmed the story of the cinemas and their makers.'];
+    text = ['filming stories about the cinemas and their makers.'];
     setText(text, position, dur, true);
   }, dur * 8);
 
