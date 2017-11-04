@@ -959,8 +959,8 @@ function zoomed() {
 /* --------- */
 
 d3.queue()
-    .defer(d3.csv, '../data/66kinos_data_v6.csv', type)
-    .defer(d3.json, '../data/d-04-simple.json') 
-    .defer(d3.json, '../data/d-bl-04-simple.json') // toposimplify -s 0.0000009 -f < deutschland-bl-topo-quant.json > output.json
+    .defer(d3.csv, 'data/66kinos_data_v6.csv', type)
+    .defer(d3.json, 'data/d-04-simple.json') 
+    .defer(d3.json, 'data/d-bl-04-simple.json') // toposimplify -s 0.0000009 -f < deutschland-bl-topo-quant.json > output.json
     .await(ready);
 
