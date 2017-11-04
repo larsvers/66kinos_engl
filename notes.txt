@@ -1,0 +1,39 @@
+
+x 66 kinos in titel
+x 66 kinos schriftzug setzen
+x Responsive (Flexbox change at breakpoint)
+	What: on a certain breakpoint, moving down, the context should slide under the context
+	Where: only content as parent and visual and context
+	How: 
+  	> content flips to felx-direction: column
+  	> visusl width and context width flip to 100vw
+  	> visusl height and context height flip to 100vh
+x Neue Daten einspeisen
+x Don't show line if NA
+x Intro text ändern
+x Remove karte from gespräche in github version
+
+x Kirschbuam
+x mobile version: give top less height
+x Logos
+x Notizen zu mobil und browser
+
+
+
+Changed: 
+ x index.html
+ x main.js
+ x base.scss
+ x variabels.scss
+ x add responsive.scss
+
+
+To translate
+
+ * Intro text
+ * Menu
+ * Parts of the list
+ * Footer
+ * Sentence
+ * Cinema-info links
+

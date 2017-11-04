@@ -1,0 +1,59 @@
+
+/* Mobile style */
+/* ============ */
+
+
+@include for-tablet-portrait-down {
+
+	/* Structure */
+	/* --------- */
+
+	#content {
+		flex-direction: column;
+	}
+
+	#visual {
+		width: 100vw;
+		height: 70vh; /* so the user sees and can scroll up the bottom bit */
+	}
+
+	#context {
+		width: 100vw;
+		height: auto;
+	}
+
+	#header {
+		width:  100vw;
+	}
+
+	#controls {
+		width: 100vw;
+	}
+
+	#cinema-info {
+		width: 80vw;
+	}
+
+
+	/* Alignment */
+	/* --------- */
+
+	#context, #cinema-info {
+		align-items: center;
+	}
+
+	#cinema-info {
+		text-align: center;
+	}
+
+	#footer {
+		flex-wrap: wrap;
+	}
+
+	#footer-logos {
+		justify-content: center;
+	}
+
+
+
+}
